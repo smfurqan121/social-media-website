@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to instagram. Explore new content">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <title>Explore</title>
+</head>
+<body>
+    <!--Header section-->
+
+    <header class="web-container">
+        <div id="web" class="web-logo">
+            <img id="logo" src="/homepage/socialpng.png" alt="Instagram logo">
+        </div>
+        <div id="web" class="web-search">
+            <input id="search-bar" type="text" placeholder="Search">
+        </div>
+
+    <!--Top row of app-->
+        <div id="app" class="header-top">
+            <div class="header-left">
+                <i class="fas fa-search"></i>
+                <input id="search-bar" type="text" placeholder="Search">
+            </div>
+            <div class="header-right">
+                <i class="fas fa-home scan"></i>
+            </div>
+        </div>
+
+    <!--Header buttons for web-->
+        <div id="web" class="web-buttons">
+            <button id="login-button" class="web-button"><a href="/homepage/index.html">Home</a> </button>
+        </div>
+    </header>
+
+    <!--Sticky bottom header for app-->
+    <div id="web" class="header-bottom">
+        <button class="nav-button">#photgraphy</button>
+        <button class="nav-button"><i class="fas fa-shopping-bag"></i>Shopping</button>
+        <button class="nav-button">#nature</button>
+        <button class="nav-button">#Aesthetic</button>
+    </div>
+
+    <!--This section break is used for the border line-->
+
+    <section id="web" class="section-break"></section>
+
+    <!--Main section contains the images-->
+
+    <main class="background">
+
+        <!--Web container aligns image items to the center-->
+        <div class="web-container">
+            <h4 id="web" class="feed-heading">Top Posts</h4>
+
+            <!--Reels is a feature only available on the app hence it has an id of app-->
+            <div id="web" class="reels">
+                <video src="https://cdn.pixabay.com/vimeo/536644240/animated-wallpaper-70962.mp4?width=360&hash=c9f12fecc9b5a00b818785dbcf9fcab7e7552c1e" style="height: 500px;" controls autoplay></video>
+                <video src="https://cdn.pixabay.com/vimeo/890121604/house-191338.mp4?width=360&hash=8c29427e4bbd58e1ba56e306749a3c69c4ca1eea" style="height: 500px;" controls autoplay></video>
+                <video src="https://cdn.pixabay.com/vimeo/588566505/lake-84878.mp4?width=360&hash=a7c9863dfd814fa7181cf418b295e01e9b2fd20f" style="height: 500px;" controls autoplay></video>
+                <video src="https://cdn.pixabay.com/vimeo/792811387/road-147898.mp4?width=360&hash=19cc7c793e5a0af02ddba66ace6f6f640a2989d2" style="height: 500px;" controls autoplay></video>
+                <video src="https://cdn.pixabay.com/vimeo/724720200/waterfall-121903.mp4?width=720&hash=6ccd6c2cab30b13f3219b3309d3c0bd63167e34e" style="height: 500px;" controls autoplay></video>
+                <video src="https://cdn.pixabay.com/vimeo/761273772/leaves-135333.mp4?width=720&hash=8139ab90c0a3902db09f52a4482a6a471b9fa3b7" style="height: 500px;" controls autoplay></video>
+            </div>
+
+            <!--Pics only is a grid of images and is available on both app and web-->
+            <div class="pics-only">
+                    <img class="image" src="https://cdn.pixabay.com/photo/2022/03/28/18/41/coffee-7098126_640.jpg" alt="">                                
+                    <img class="image" src="https://cdn.pixabay.com/photo/2020/10/07/10/51/mountains-5634817_640.jpg" alt="">
+                    <img class="image" src="https://cdn.pixabay.com/photo/2020/11/02/15/08/autumn-5706984_640.jpg" alt="">               
+                    <img class="image" src="https://images.pexels.com/photos/3640930/pexels-photo-3640930.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <img class="image" src="https://images.pexels.com/photos/2228580/pexels-photo-2228580.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                    <img class="image" src="https://images.pexels.com/photos/4348556/pexels-photo-4348556.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+            </div>
+            <h4 id="web" class="feed-heading">Most Recent</h4>
+
+            <!--PV container is the picture and video grid with 2 images and a video-->
+            <div id="web" class="pv-container">
+                <img class="image top-pv-image" src="https://images.pexels.com/photos/4503875/pexels-photo-4503875.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">   
+                <img class="image bottom-pv-image" src="https://images.pexels.com/photos/4348556/pexels-photo-4348556.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">       
+                <video src=".." controls autoplay></video>
+            </div>
+
+            <div class="pics-only">
+                    <img class="image" src="https://cdn.pixabay.com/photo/2021/09/10/04/24/sunset-6612075_640.jpg" alt="">
+                    <img class="image" src="https://cdn.pixabay.com/photo/2020/08/02/10/57/flowers-5457379_640.jpg" alt="">
+                    <img class="image" src="https://cdn.pixabay.com/photo/2021/08/06/17/06/breakfast-6526807_640.jpg" alt="">
+                    <img class="image" src="https://cdn.pixabay.com/photo/2020/02/05/06/37/girl-4820225_640.jpg" alt="">
+                    <img class="image" src="https://cdn.pixabay.com/photo/2023/04/22/02/20/insect-7942861_640.jpg" alt="">
+                    <img class="image" src="https://cdn.pixabay.com/photo/2021/09/04/16/51/girl-6598198_640.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--The footer section is only available on the app and it contains an image to simulate a logged in account-->
+    <footer id="web">
+        <i class="fas fa-home"></i>
+        <i class="fas footer-search fa-search"></i>
+        <i class="far fa-plus-square"></i>
+        <i class="far fa-heart"></i>
+        <img class="user" src="https://cdn.pixabay.com/photo/2023/04/24/16/53/young-woman-7948563_640.jpg" alt="user">
+    </footer>
+</body>
+</html>

@@ -1,0 +1,275 @@
+/* Styling for the notifications page */
+html,
+body {
+    scroll-behavior: smooth;
+    background-color:  #fcc5c5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:black;
+    font-size: medium;
+    overflow-x: hidden;
+    display: flex;
+    width: 100vw;
+
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+a:hover {
+    opacity: 0.5;
+    /* background-color:#220022; */
+    font-weight: bold;
+    color:#000000;
+
+}
+
+.sidebar {
+    background-color:#ff8f8f;
+    width: 170px;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #282727;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+#upload{
+  display:none
+}
+.upper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.logo {
+    width: 91px;
+    margin: 0rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 20px;
+}
+
+.link {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    color: var(--white);
+    font-size: 1.8em;
+}
+
+.link:hover {
+    /* background-color: #2e2e2e; */
+    opacity: 0.5;
+}
+
+.sidebar .link i {
+    margin-right: 10px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.bottom-container .link.a {
+    color:black;
+    text-decoration: none;
+    font-size: small;
+    margin: 5px;
+}
+
+.logo2 {
+    display: none;
+}
+
+.bottom-navbar {
+  background-color:#ff8f8f;
+    display: none;
+    border-top: 0px solid var(--grey);
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    height: 60px;
+    background-color: transparent;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.bottom-link {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.gradient-bottomorder{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  padding: 2px;
+}
+
+.gradient-bottomorder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--black);
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+      width: 60px;
+  }
+
+  .upper-container {
+      align-items: center;
+      justify-content: center;
+  }
+
+  .link a {
+      display: none;
+  }
+
+  .logo {
+      display: none;
+  }
+
+  .logo2 {
+      display: block;
+      width: 50px;
+      margin-left: -5px;
+      margin-bottom: 1rem;
+
+  }
+  .main-container{
+    width: 100vw;
+    margin: auto;
+  }
+  .suggestion{
+    display: none;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .bottom-navbar {
+    display: flex;
+    background-color:#ff8f8f;
+    border-top: 1px solid var(--grey);
+    z-index: 1000;
+}
+.bottom-link {
+      display: flex !important;
+  }
+  .sidebar{
+      display: none;
+      width: 0px;
+  }
+  .main-container,
+  .post,
+  .stories-container{
+    width: 90vw;
+    padding: 0rem 0rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+  }
+  .suggestion{
+    display: none;
+  }
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .notifications {
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  .notificationsheader{
+
+        display: flex;
+        flex-direction: column;
+        margin-left: 16%;
+        width: 50%;
+    }
+  .notif {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+  
+  .notif .cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .notif .cart .img {
+    margin-right: 15px;
+  }
+  
+  .notif .cart .img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .notif .info .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .notif .info .desc,
+  .notif .info .time {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .notif .follow_you .follow_text {
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .notif .story_like img {
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  

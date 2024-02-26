@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page </title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="container">
+
+    <div class="head">
+      <h1>Welcome to ChatShack</h1>
+      <img src="/homepage/socialpng.png" style="width:30px;">
+    </div>
+    <h1><span class="auto-type"></span></h1>
+    <button class="button" id="form-open">Login</button>
+  </div>
+  <section class="home">
+    <div class="form_container">
+      <i class="uil uil-times form_close"></i>
+      <!-- Login From -->
+      <div class="form login_form">
+        <form action="#">
+          <h2>Login</h2>
+
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Enter your password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="check" />
+              <label for="check">Remember me</label>
+            </span>
+            <a href="#" class="forgot_pw">Forgot password?</a>
+          </div>
+
+          <button class="button"><a href="/homepage/index.html">login now</a></button>
+
+          <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+        </form>
+      </div>
+
+      <!-- Signup From -->
+      <div class="form signup_form">
+        <form action="#">
+          <h2>Signup</h2>
+
+          <div class="input_box">
+            <input type="email" placeholder="Enter your email" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Create password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Confirm password" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+
+          <button class="button"><a href="/homepage/index.html">Signup Now</a></button>
+
+          <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: [" 💬 Connect with friends", "Share moments, and stay in the loop effortlessly. ", " Let's chat and share pictures with friends😊!!!!..."],
+      typeSpeed: 100,
+
+    })
+    const formOpenBtn = document.querySelector("#form-open"),
+      home = document.querySelector(".home"),
+      formContainer = document.querySelector(".form_container"),
+      formCloseBtn = document.querySelector(".form_close"),
+      signupBtn = document.querySelector("#signup"),
+      loginBtn = document.querySelector("#login"),
+      pwShowHide = document.querySelectorAll(".pw_hide");
+
+    formOpenBtn.addEventListener("click", () => home.classList.add("show"));
+    formCloseBtn.addEventListener("click", () => home.classList.remove("show"));
+
+    pwShowHide.forEach((icon) => {
+      icon.addEventListener("click", () => {
+        let getPwInput = icon.parentElement.querySelector("input");
+        if (getPwInput.type === "password") {
+          getPwInput.type = "text";
+          icon.classList.replace("uil-eye-slash", "uil-eye");
+        } else {
+          getPwInput.type = "password";
+          icon.classList.replace("uil-eye", "uil-eye-slash");
+        }
+      });
+    });
+
+    signupBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      formContainer.classList.add("active");
+    });
+    loginBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      formContainer.classList.remove("active");
+    });
+  </script>
+</body>
+
+</html>
